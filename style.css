@@ -1,0 +1,397 @@
+:root {
+    --negro: #161616;
+    --blanco: #FFFFFF;
+    --rojo: #F03033;
+}
+
+
+
+body {
+    background-color: #161616;
+    color: var(--blanco);
+    margin: 0;
+
+    /* Sticky footer layout */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* ocupa todo el ancho de la pantalla */
+    z-index: -2;
+    pointer-events: none;
+    /* opcional */
+}
+
+.background-image img {
+    width: 100%;
+    /* escala con el ancho del viewport */
+    height: auto;
+    /* mantiene proporción */
+    display: block;
+}
+
+.background-texture {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.20;
+}
+
+/* .background-categoria-latinoamerica {
+    background-image: url("../img/textura-fondo.svg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+
+main {
+    flex: 1 0 auto;
+}
+
+.color-red {
+    color: var(--rojo);
+}
+
+.header {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: var(--negro);
+    box-shadow: 0 10px 10px #00000025;
+}
+
+.header-img {
+    max-height: 70px;
+}
+
+.nav-btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-btn {
+    color: var(--blanco);
+    font-family: "Staatliches", sans-serif;
+    font-size: 16px;
+    font-weight: 150;
+    font-style: normal;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    color: var(--rojo);
+}
+
+
+.nombre-categoria {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 550;
+    font-size: 50px;
+    font-family: "Staatliches", sans-serif;
+    text-align: center;
+
+}
+
+
+/* ======================================== FOOTER =================================== */
+
+
+
+.flex-3-col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-3-col article {
+    flex: 0 0 30%;
+}
+
+.background-footer {
+    background-color: #F03033;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ======================================== SECTION DESTACADO =================================== */
+
+.section-destacado {
+    width: 100%;
+    height: 800px;
+    background-image: url("../img/fondos_categorías/fondo-destacado.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+.info-destacado {
+    width: 800px;
+}
+
+.info-destacado .etiqueta {
+    color: var(--negro);
+
+    .nota-xira-section {
+        background-image: url("../img/fondos_categorías/fondo-xira.png");
+        /* tu imagen */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* hace que la imagen cubra todo */
+        background-position: center;
+        /* centra la imagen */
+        padding: 40px;
+        /* espacio interior */
+    
+        /* opcional, esquinas redondeadas */
+    }
+
+    font-size: 15px;
+    background-color: var(--rojo);
+    width: fit-content;
+    padding: 5px;
+
+    font-family: "Staatliches",
+    sans-serif;
+    margin-bottom: 20px;
+}
+
+.info-destacado .titulo {
+    color: var(--blanco);
+    font-size: 60px;
+    width: 550px;
+    font-weight: 500;
+    font-family: "Staatliches", sans-serif;
+    line-height: 50px;
+    margin-bottom: 20px;
+
+}
+
+.info-destacado .bajada {
+    color: var(--blanco);
+    font-size: 20px;
+    width: 550px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+
+}
+
+/* ======================================== CATEGORIA SECTION =================================== */
+
+.categoria-section {
+    width: 100%;
+}
+
+.category-title {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 550;
+    font-size: 40px;
+    font-family: "Staatliches", sans-serif;
+}
+
+.category-subtitle {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 550;
+    font-size: 35px;
+    font-family: "Staatliches", sans-serif;
+}
+
+.cards-slider {
+    overflow-x: auto;
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.card-notas {
+    width: 300px;
+    max-width: 300px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-notas:hover {
+    transform: scale(0.97);
+}
+
+.img-card-notas {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.texto-card-notas {
+
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+/* ======================================== NOTA XIRA =================================== */
+
+.regresar-btn {
+    font-family: "Roboto", sans-serif;
+    padding: 100px 0 0 0;
+}
+
+.dos-columnas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.info-nota-xira .etiqueta {
+    color: var(--negro);
+    font-size: 21px;
+    background-color: var(--rojo);
+    width: fit-content;
+    padding: 4px 10px;
+    font-family: "Staatliches", sans-serif;
+}
+
+.info-nota-xira .fecha {
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+.info-nota-xira .titulo {
+    color: var(--blanco);
+    font-size: 60px;
+    width: fit-content;
+    font-weight: 500;
+    font-family: "Staatliches", sans-serif;
+    line-height: 60px;
+    margin-bottom: 20px;
+
+}
+
+.info-nota-xira .bajada {
+    color: var(--blanco);
+    font-size: 22px;
+    line-height: 32px;
+    width: fit-content;
+    font-weight: 350;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 50px;
+}
+
+.info-nota-xira .perfil-editor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.info-nota-xira .perfil-editor img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #8b8b8b;
+}
+
+.imagen-nota {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.imagen-nota img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+
+}
+
+.contenido-nota-xira {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 28px;
+}
+
+/* ======================================== ASIDE NOTA =================================== */
+
+
+.aside-nota {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 1px solid var(--blanco);
+    padding: 20px;
+    height: fit-content;
+}
+
+.titulo-aside-nota {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Staatliches", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.contenidos-relacionados {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    border-bottom: 1px solid var(--blanco);
+    padding-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.contenidos-relacionados:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.contenidos-relacionados:hover {
+    transform: scale(0.97);
+}
+
+.contenidos-relacionados img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+
+.footer-container {
+    width: 100%;
+    background-color: var(--rojo);
+    margin-top: auto;
+    /* empuja el footer al fondo */
+    position: static;
+    z-index: 10;
+    padding: 60px 0;
+}
