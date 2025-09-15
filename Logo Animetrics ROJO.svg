@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 143.53">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-3 {
+        fill: #f03033;
+        font-family: RalewayRoman-Black, Raleway;
+        font-size: 87px;
+        font-variation-settings: 'wght' 900;
+        font-weight: 800;
+      }
+
+      .cls-4 {
+        letter-spacing: -.06em;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(42.07 103.52)"><tspan class="cls-1" x="0" y="0">Anim</tspan><tspan class="cls-2" x="197.83" y="0">e</tspan><tspan class="cls-4" x="245.08" y="0">trics</tspan></text>
+</svg>
